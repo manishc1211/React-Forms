@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import webFormFields from '../assets/webFormFields';
+import FormSubmit from './FormSubmit';
 import moment from 'moment';
 
 export default function Webform() {
@@ -115,12 +116,7 @@ export default function Webform() {
                 )
             })}
             <p className="form-actions">
-                <button type="reset" className="button button-flat">
-                    Reset
-                </button>
-                <button type="submit" className="button">
-                    Sign up
-                </button>
+                <FormSubmit />
             </p>
         </form>
     )
